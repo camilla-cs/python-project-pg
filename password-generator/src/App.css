@@ -1,0 +1,183 @@
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+}
+
+.generator {
+  width: 100%;
+  max-width: 480px;
+  padding: 36px;
+  background: #1c1c29;
+  border: 1px solid #343447;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.header h1 {
+  color: #ffffff;
+  font-size: 27px;
+  margin: 0 0 10px;
+}
+
+.header p {
+  color: #a4a4b8;
+  font-size: 14px;
+}
+
+.password-container {
+  background: #12121c;
+  border: 1px solid #41415b;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 30px;
+}
+
+.password-output {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.password-output span {
+  min-width: 0;
+}
+
+.copy-button {
+  background: #34344b;
+  color: white;
+  border: none;
+  padding: 9px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.copy-button:hover {
+  background: #494966;
+}
+
+.copy-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.length-header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.length-header span {
+  color: #b49aff;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #a78bfa;
+  cursor: pointer;
+}
+
+.range-labels {
+  display: flex;
+  justify-content: space-between;
+  color: #85859b;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.settings h2 {
+  color: white;
+  font-size: 16px;
+  margin: 28px 0 16px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #e5e5ee;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.option input {
+  width: 17px;
+  height: 17px;
+  accent-color: #a78bfa;
+  cursor: pointer;
+}
+
+.option small {
+  margin-left: auto;
+  color: #a78bfa;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.generate-button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px;
+  background: #8b5cf6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.generate-button:hover {
+  background: #7c3aed;
+}
+
+.error {
+  color: #ff8585;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+footer {
+  color: #85859b;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 25px;
+}
+
+@media (max-width: 520px) {
+  .generator {
+    padding: 25px 20px;
+  }
+
+  .header h1 {
+    font-size: 23px;
+  }
+}
