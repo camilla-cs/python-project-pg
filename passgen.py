@@ -42,4 +42,7 @@ for x in range(part2):
     result.append(s3[x])
     result.append(s4[x])
 
-    
+random.shuffle(result)
+
+password = ''.join(result)
+print(password)
